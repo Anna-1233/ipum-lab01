@@ -5,3 +5,16 @@ Accept: application/json
 
 GET http://127.0.0.1:8000/health
 Accept: application/json
+
+###
+
+POST http://127.0.0.1:8000/predict
+Accept: application/json
+Content-Type: application/json
+
+{
+  "sepal_length": 5.1,
+  "sepal_width": 3.5,
+  "petal_length": 1.4,
+  "petal_width": 0.2
+}
